@@ -177,25 +177,25 @@ export function BroucherPage() {
             <h2 className="text-2xl sm:text-3xl font-extrabold mb-2 text-primary text-center">Weekly Menu</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-2.5 flex-1 items-stretch">
               {vegMenu.map((item, idx) => (
-                <div key={idx} className="flex flex-col bg-black/25 rounded-xl p-3 sm:p-3.5 border border-white/10 hover:border-primary/40 transition-colors text-left justify-between min-h-[210px] sm:min-h-[235px]">
+                <div key={idx} className="flex flex-col bg-black/25 rounded-xl p-3.5 sm:p-4 border border-white/10 hover:border-primary/40 transition-colors text-left justify-between min-h-[230px] sm:min-h-[260px]">
                   <div>
-                    <span className="text-base sm:text-xl font-black text-[#FC8019] border-b border-white/15 pb-1 mb-2.5 text-center block tracking-wide">
+                    <span className="text-lg sm:text-2xl font-black text-[#FC8019] border-b border-white/15 pb-1 mb-2.5 text-center block tracking-wide">
                       {item.day}
                     </span>
-                    <div className="space-y-2.5">
+                    <div className="space-y-3">
                       <div>
-                        <span className="font-bold text-orange-400 block text-xs sm:text-sm uppercase tracking-wider mb-1">
+                        <span className="font-extrabold text-orange-400 block text-sm sm:text-base uppercase tracking-wider mb-1">
                           ☀️ Lunch
                         </span>
-                        <span className="text-[15.5px] sm:text-[17px] text-white font-semibold leading-relaxed block">
+                        <span className="text-[17px] sm:text-[19px] lg:text-[20px] text-white font-bold leading-relaxed block">
                           {item.lunch}
                         </span>
                       </div>
                       <div>
-                        <span className="font-bold text-orange-400 block text-xs sm:text-sm uppercase tracking-wider mb-1">
+                        <span className="font-extrabold text-orange-400 block text-sm sm:text-base uppercase tracking-wider mb-1">
                           🌙 Dinner
                         </span>
-                        <span className="text-[15.5px] sm:text-[17px] text-white font-semibold leading-relaxed block">
+                        <span className="text-[17px] sm:text-[19px] lg:text-[20px] text-white font-bold leading-relaxed block">
                           {item.dinner}
                         </span>
                       </div>
