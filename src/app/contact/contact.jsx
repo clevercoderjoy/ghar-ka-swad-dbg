@@ -15,19 +15,19 @@ const contactInfo = [
   {
     icon: Headphones,
     title: "Support Hours",
-    detail: "9 AM - 9 PM Daily",
+    detail: "8 AM - 9 PM",
     action: null
   },
   {
     icon: FaWhatsapp,
     title: "Whatsapp",
-    detail: "घर का स्वाद",
+    detail: "Ghar ka Swad",
     action: "https://wa.me/+916202744741"
   },
   {
     icon: Clock,
     title: "Delivery Hours",
-    detail: "9 AM - 9 PM Daily",
+    detail: "12 PM - 8 PM",
     action: null
   }
 ];

@@ -23,7 +23,7 @@ const notes = [
 
 export function BroucherPage() {
   return (
-    <main className="relative min-h-screen w-full flex flex-col items-center justify-start py-4 px-1 bg-background text-foreground overflow-x-hidden">
+    <main className="relative min-h-screen w-full flex flex-col items-center justify-start pt-3 pb-1 px-1 bg-background text-foreground overflow-x-hidden">
       <style dangerouslySetInnerHTML={{__html: `
         @media print {
           body, html, main {
@@ -103,7 +103,7 @@ export function BroucherPage() {
         </div>
 
         {/* Bento Grid — 12 columns */}
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-3 w-full my-3 px-4">
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-3 w-full mt-3 mb-1 px-4">
 
           {/* ROW 1: Why, Ratings, Food Standards, Note (4 compact cards) */}
 
@@ -299,7 +299,7 @@ export function BroucherPage() {
                   </div>
                   <div className="flex flex-col text-left justify-center">
                     <span className="text-base sm:text-lg text-white/80 font-bold">Support Hours</span>
-                    <span className="text-xl sm:text-2xl font-black text-white">9 AM - 9 PM Daily</span>
+                    <span className="text-xl sm:text-2xl font-black text-white">8 AM - 9 PM</span>
                   </div>
                 </div>
 
@@ -310,7 +310,7 @@ export function BroucherPage() {
                   </div>
                   <div className="flex flex-col text-left justify-center">
                     <span className="text-base sm:text-lg text-white/80 font-bold">Delivery Hours</span>
-                    <span className="text-xl sm:text-2xl font-black text-white">9 AM - 9 PM Daily</span>
+                    <span className="text-xl sm:text-2xl font-black text-white">12 PM - 8 PM</span>
                   </div>
                 </div>
               </div>
@@ -343,7 +343,7 @@ export function BroucherPage() {
                       width={160}
                       height={160}
                       style={{ imageRendering: "pixelated" }}
-                      className="w-full h-full object-cover scale-[1.06] transform [image-rendering:crisp-edges] [image-rendering:pixelated]"
+                      className="w-full h-full object-cover scale-[1.12] transform [image-rendering:crisp-edges] [image-rendering:pixelated]"
                       loading="eager"
                       decoding="async"
                     />
@@ -377,7 +377,7 @@ export function BroucherPage() {
                       width={160}
                       height={160}
                       style={{ imageRendering: "pixelated" }}
-                      className="w-full h-full object-cover scale-[0.95] transform [image-rendering:crisp-edges] [image-rendering:pixelated]"
+                      className="w-full h-full object-cover scale-[1.12] transform [image-rendering:crisp-edges] [image-rendering:pixelated]"
                       loading="eager"
                       decoding="async"
                     />
@@ -391,48 +391,6 @@ export function BroucherPage() {
 
         </div>
 
-        {/* Footer Bar */}
-        <div className="relative w-full mt-1.5 mb-1 px-4 flex flex-col md:flex-row items-center justify-between gap-4 pt-3.5 pb-0.5 border-t border-white/10">
-          {/* Left: Logo Pill (far left) */}
-          <div className="group relative flex items-center gap-2.5 p-0 h-11 pr-4 rounded-full bg-black/35 backdrop-blur-md border border-white/20 shadow-[0_4px_30px_rgba(252,128,25,0.06),inset_0_1px_1px_rgba(252,128,25,0.08)] hover:scale-105 transition-all duration-300 overflow-hidden">
-            <div className="absolute inset-0 rounded-full bg-gradient-to-b from-primary/8 via-transparent to-transparent pointer-events-none" />
-            <div 
-              className="absolute inset-0 rounded-full bg-primary/15 border border-primary/25 scale-[0.85] opacity-0 group-hover:scale-100 group-hover:opacity-100 pointer-events-none" 
-              style={{
-                transitionProperty: 'all',
-                transitionDuration: '500ms',
-                transitionTimingFunction: 'cubic-bezier(0.34, 1.15, 0.64, 1)'
-              }}
-            />
-            <img
-              src="/logo.svg.svg"
-              alt="Ghar ka Swad Logo"
-              style={{ width: 44, height: 44 }}
-              className="relative z-10 rounded-full object-cover border border-white/10"
-              decoding="async"
-            />
-            <div className="relative z-10 flex flex-col justify-center items-center select-none text-center gap-0 leading-tight pr-1">
-              <span className="text-[16px] sm:text-[17px] font-bold text-white tracking-wide whitespace-nowrap">
-                Ghar ka Swad
-              </span>
-              <span className="text-[13px] sm:text-[14px] font-black text-[#FC8019] tracking-wider uppercase whitespace-nowrap">
-                Sanskriti Raj
-              </span>
-            </div>
-          </div>
-
-          {/* Center: Copyright (dead-centered horizontally & vertically) */}
-          <div className="md:absolute md:left-1/2 md:top-[55%] md:-translate-x-1/2 md:-translate-y-1/2 text-base sm:text-lg text-white text-center font-bold whitespace-nowrap">
-            © 2026 <span className="text-primary font-extrabold">Ghar ka Swad</span> | All rights reserved
-          </div>
-
-          {/* Right: Made with love Pill (far right) */}
-          <div className="group relative flex items-center gap-2 h-11 px-5 rounded-full bg-black/35 backdrop-blur-md border border-white/20 shadow-[0_4px_30px_rgba(252,128,25,0.06),inset_0_1px_1px_rgba(252,128,25,0.08)]">
-            <span className="relative z-10 text-sm sm:text-base text-white font-semibold">Made with</span>
-            <Heart className="relative z-10 w-4.5 h-4.5 text-red-500 fill-red-500 border-red-500 animate-pulse" />
-            <span className="relative z-10 text-sm sm:text-base text-white font-semibold">by <a href="https://clevercoderjoy.bio.link/" target="_blank" rel="noopener noreferrer" className="text-[#FC8019] drop-shadow-md no-underline transition-colors font-extrabold">clevercoderjoy</a></span>
-          </div>
-        </div>
       </div>
     </main>
   );
